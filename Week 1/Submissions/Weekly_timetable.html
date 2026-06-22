@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th{
+            padding: 10px;
+            text-align: center;
+            background-color: #e6e6e6;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .Structures {
+            background-color: #ff9999;
+        }
+        .Physics {
+            background-color: #99ccff;
+        }
+        .Low-Speed-Aerodynamics {
+            background-color: #99ff99;
+        }
+        .AI-DS {
+            background-color: #ffcc99;
+        }
+        .Lab {
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weekly Timetable</h1>
+    <table border="1">
+        <tr id="header">
+            <th>Time</th>
+            <th>8:30 - 9:30</th>
+            <th>9:30 - 10:30</th>
+            <th>10:30 - 11:30</th>
+            <th>11:30 - 12:30</th>
+            <th>2:00 - 3:00</th>
+            <th>3:00 - 4:00</th>
+            <th>4:00 - 5:00</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td class="Structures">Structures</td>
+            <td class="Physics">Physics</td>
+            <td class="Low-Speed-Aerodynamics">Low Speed Aerodynamics</td>
+            <td class="AI-DS">AI & DS</td>
+            <td colspan="3" class="Lab">Structures Lab</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td class="AI-DS">AI & DS</td>
+            <td class="Structures">Structures</td>
+            <td class="Physics">Physics</td>
+            <td class="Low-Speed-Aerodynamics">Low Speed Aerodynamics</td>
+            <td colspan="3" class="Lab">-</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td colspan="3" class="Lab">-</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td class="Low-Speed-Aerodynamics">Low Speed Aerodynamics</td>
+            <td class="AI-DS">AI & DS</td>
+            <td class="Structures">Structures</td>
+            <td class="Physics">Physics</td>
+            <td colspan="3" class="Lab">Controls Lab</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td colspan="3" class="Lab">Design Lab</td>
+        </tr>
+    </table>
+</body>
+</html>
