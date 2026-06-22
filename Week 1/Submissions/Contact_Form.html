@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #e0e0e0;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+        }
+        div {
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }   
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit-form-endpoint" method="POST">
+    <!-- Text Input Field -->
+        <div>
+            <label for="userName">Full Name:</label>
+            <input type="text" id="userName" name="user_name" required placeholder="Full Name">
+        </div>
+
+    <!-- Email Input Field -->
+        <div>
+            <label for="userEmail">Email Address:</label>
+            <input type="email" id="userEmail" name="user_email" required placeholder="name@example.com">
+        </div>
+    
+    <!-- Password Input Field -->
+        <div>
+            <label for="userPassword">Password:</label>
+            <input type="password" id="userPassword" name="user_password" required placeholder="Password">
+        </div>
+    <!-- Dropdown to select a country -->
+        <div>
+            <label for="userCountry">Country:</label>
+            <select id="userCountry" name="user_country" required>
+                <option value="">Select a country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+        </div>
+    <!-- Submit Button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <!-- JavaScript to handle form submission -->
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Collect form data
+            const formData = {
+                name: document.getElementById('userName').value,
+                email: document.getElementById('userEmail').value,
+                password: document.getElementById('userPassword').value,
+                country: document.getElementById('userCountry').value
+            };
+
+            // Log the form data to the console (for demonstration)
+            console.log('Form Data Submitted:', formData);
+
+        });
+    </script>
+</body>
+</html>
