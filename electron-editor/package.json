@@ -1,0 +1,14 @@
+{
+  "name": "electron-editor",
+  "version": "0.1.0",
+  "description": "A code editor built with Electron, as an 8-week learning project",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0"
+  }
+}
