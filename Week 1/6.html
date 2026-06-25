@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Webpage</title>
+    <link rel="stylesheet" href="6.css">
+</head>
+<body>
+
+    <div class="tab-bar">
+        <button class="tab-button active" onclick="openTab('intro')">
+            Introduction
+        </button>
+
+        <button class="tab-button" onclick="openTab('achievements')">
+            Achievements
+        </button>
+
+        <button class="tab-button" onclick="openTab('contacts')">
+            Contacts
+        </button>
+    </div>
+
+    <div id="intro" class="tab-content">
+        <h1>Mohammad Noorain Ansari</h1>
+        <p>
+            I am an Electrical Engineering student at IIT Bombay interested in
+                AI/ML, embedded systems. I enjoy building
+                projects and learning new technologies.
+        </p>
+    </div>
+
+    <div id="achievements" class="tab-content hidden">
+        <h1>Achievements</h1>
+        <ul>
+            <li>Developed a 2D Platformer Game using Godot.</li>
+            <li>Worked on AI/ML Projects involving Audio Classification.</li>
+            <li>Member of multiple engineering project teams.</li>
+        </ul>
+    </div>
+
+    <div id="contacts" class="tab-content hidden">
+        <h1>Contact Information</h1>
+        <p>Phone: 6767676767</p>
+        <p>Email: 23b3911@iitb.ac.in</p>
+        <p>GitHub: github.com/Noorain05</p>
+    </div>
+
+    <script src="6.js"></script>
+
+</body>
+</html>
