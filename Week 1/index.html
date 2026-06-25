@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Viewer</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabs {
+        display: flex;
+        background: #222;
+    }
+
+    .tab {
+        padding: 12px 20px;
+        color: white;
+        cursor: pointer;
+        border-right: 1px solid #444;
+        transition: background 0.2s;
+    }
+
+    .tab:hover {
+        background: #444;
+    }
+
+    iframe {
+        flex: 1;
+        width: 100%;
+        border: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="tabs">
+    <div class="tab" onclick="loadPage('Introduction.html')">Introduction</div>
+    <div class="tab" onclick="loadPage('Favorite Things.html')">Favorite Things</div>
+    <div class="tab" onclick="loadPage('Profile.html')">Profile</div>
+    <div class="tab" onclick="loadPage('Timetable.html')">Timetable</div>
+	<div class="tab" onclick="loadPage('Form.html')">Form</div>
+<div class="tab" onclick="loadPage('Achievements.html')">Achievements</div>
+<div class="tab" onclick="loadPage('Contacts.html')">Contacts</div>
+
+
+</div>
+
+
+<iframe id="viewer" src="Introduction.html"></iframe>
+
+<script>
+function loadPage(page) {
+    document.getElementById("viewer").src = page;
+}
+</script>
+
+</body>
+</html>
